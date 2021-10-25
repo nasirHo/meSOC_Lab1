@@ -1,9 +1,10 @@
 console.log("This is  a strange and wierd error message.")
-let hurtWord = ["Ouch", "It's hurt!", "I am going to cry", "Why you doing this to me?", "Are we stil friend, Right?","DO NOT DO THIS", "I will revenge"]
-document.getElementById("bt1").addEventListener("click", function(){
-    document.getElementById("hw").innerText = hurtWord[getRandomInt(0, hurtWord.length)]
-    document.body.style.backgroundColor=getRandomColor()
+
+$(".btn").click(evt => {
+  console.log(evt.target.innerHTML, 'is clicked')
 })
+
+
 
 function getRandomColor() {
     var letters = '0123456789ABCDEF';
