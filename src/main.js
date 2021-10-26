@@ -66,7 +66,7 @@ function connectDevice(dev){
         if(!isPause){
           console.log('in eventlistener')
           package = Array.from(new Uint16Array(this.value.buffer))
-          $("#hw")[0].innerHTML = 'package length is ' + package.length
+          $("#package_title")[0].innerHTML = 'Package length is ' + package.length
           $("#package_body")[0].innerHTML = '[' + package + ']'
         }
       })
